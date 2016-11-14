@@ -18,3 +18,9 @@ module.exports.de_collect = (accesstoken,topic_id) =>
 
 
 
+
+module.exports.getLoginname = loginname =>
+    scm ('condeGet',{
+        uri: '/api/v1/topic_collect/'+loginname,
+        json: true
+    })
