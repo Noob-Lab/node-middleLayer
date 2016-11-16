@@ -4,7 +4,9 @@ const topic_collect = require('../action/topic_collect');
 const user = require('../action/user')
 const message = require('../action/message');
 
+
 module.exports = function(app){
+
 
     app.use('/topics',topics)
     app.use('/topic',topic)

@@ -1,7 +1,6 @@
 
 const topics = require('../model')
 
-
 module.exports = (path,router) => {
 
     router

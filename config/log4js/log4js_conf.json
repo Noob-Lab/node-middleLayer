@@ -1,0 +1,10 @@
+
+{
+    "appenders":[
+        {"type":"console"},
+        {"type":"dateFile","filename":"logs/access.log","pattern": "-yyyy-MM-dd-.log","alwaysIncludePattern":true,"maxLogSize":20480,"backups":3}
+    ],
+    "replaceConsole": true
+}
+
+
