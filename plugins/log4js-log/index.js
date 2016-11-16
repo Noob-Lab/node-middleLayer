@@ -10,7 +10,6 @@ const log4js = require("log4js");
 
 
 
-
 /**
  * 暴露到应用的日志接口，调用该方法前必须确保已经configure过
  * @param name 指定log4js配置文件中的category。依此找到对应的appender。
