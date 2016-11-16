@@ -8,7 +8,7 @@ module.exports = (path,router) => {
         .route(path)
         .get((req,res)=>{
             topics.getTopic(req.query.page,req.query.tab,req.query.limit)
-                .then(res.jsonp.bind(res))
+                .then(res.status(200).jsonp.bind(res))
                 .catch(function (err) {
                     res.send(err.response.body)
                 });

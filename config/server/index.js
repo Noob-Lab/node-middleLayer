@@ -12,7 +12,8 @@ module.exports={
     },
     condePost:{//post请求
         method:'POST',
-        uri:conf.servername.url
+        uri:conf.servername.url,
+        json: true
     }
 
 }
