@@ -2,8 +2,9 @@ const scm = require('../../../plugins/server-conf-merge/')
 
 module.exports.getTopic = (page,tab,limit)=>
     scm ('condeGet', {
-        data: {page,tab,limit},
-        uri:'/api/v1/topics'
+        uri:'/api/v1/topics',
+        qs: {page,tab,limit},
+
     })
 
 
