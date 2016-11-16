@@ -25,7 +25,20 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+//server.listen(port);
+
+/**
+ * for test
+ * 直接启动 index.js 则会监听端口启动程序，如果 index.js 被 require 了，则导出 app，通常用于测试
+ */
+if(module.parent){
+  module.exports = server;
+}else{
+  server.listen(port,function(){
+    console.log(`listening on port ${port}`);
+  })
+}
+
 server.on('error', onError);
 server.on('listening', onListening);
 

@@ -10,7 +10,7 @@ module.exports.getTopic = (page,tab,limit)=>
 module.exports.creatTopic = (accesstoken,title,tab,content) =>
 	scm ('condePost',{
           uri: '/api/v1/topics',
-          data: {accesstoken,title,tab,content},
+          form: {accesstoken,title,tab,content},
           json: true
         })
 
@@ -18,7 +18,7 @@ module.exports.creatTopic = (accesstoken,title,tab,content) =>
 module.exports.updateTopic = (accesstoken,topic_id,title,tab,content) =>
     scm ('condePost',{
         uri: '/api/v1/topics/update',
-        data: {accesstoken,topic_id,title,tab,content},
+        form: {accesstoken,topic_id,title,tab,content},
         json: true // Automatically stringifies the body to JSON
     })
 
