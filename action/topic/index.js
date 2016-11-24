@@ -4,7 +4,7 @@ const router = express.Router();
 const topic = require('./controller')
 
 
-topic('/:id',router)
+topic('/id/:id',router)
 
 
 

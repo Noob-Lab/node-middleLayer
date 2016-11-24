@@ -6,7 +6,7 @@ const update = require('./controller/update')
 
 
 
-topics('/',router)
+topics('/topics',router)
 update('/update',router)
 
 

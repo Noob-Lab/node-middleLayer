@@ -12,7 +12,7 @@
 api路径 [http://192.168.42.234:3000/](http://192.168.42.234:3000/)
 
 ## 用户
-### get /user/:loginname用户信息
+### get /user/loginname/:loginname用户信息
    示例：[http://192.168.42.234:3000/user/choukin1](http://192.168.42.234:3000/user/choukin)
 
 ### POST /user/token 验证用户token

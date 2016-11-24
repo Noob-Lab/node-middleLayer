@@ -1,7 +1,7 @@
 
 // 此配置文件适合多人合作设置各自不同环境的配置信息
 var env      = 'dev'; // dev or product
-var devloper = 'mewtwo'; // 开发者：defaults,your name，默认是系统默认的配置，开发者名字按照各自环境配置自己的配置文件信息,适合多人合作情况
+var developer = 'mewtwo'; // 开发者：defaults,your name，默认是系统默认的配置，开发者名字按照各自环境配置自己的配置文件信息,适合多人合作情况
 var protocol     = 'https://'; //http:// or https:// 请求后端服务的协议
 
 var settings = {
@@ -28,7 +28,7 @@ var settings = {
             mongodb: {
                 host: "localhost",
                 port: "27017",
-                dbname: "mewtwo",
+                dbname: "xcx",
                 username: "",
                 password: ""
             },
@@ -41,7 +41,7 @@ var settings = {
             mongodb: {
                 host: "localhost",
                 port: "27017",
-                dbname: "mewtwo",
+                dbname: "xcx",
                 username: "",
                 password: ""
             },
@@ -56,7 +56,7 @@ var settings = {
         mongodb: {
             host: "",
             port: "",
-            dbname: "mewtwo",
+            dbname: "xcx",
             username: "uname",
             password: "pwd"
         },
@@ -64,7 +64,7 @@ var settings = {
     }
 }
 
-const c = env === 'dev' ? settings[env][devloper] : settings[env],
+const c = env === 'dev' ? settings[env][developer] : settings[env],
     mongo = c.mongodb,
     servername = c.servername;
     port = servername.port ? ':'+servername.port : '';

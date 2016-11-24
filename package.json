@@ -14,7 +14,7 @@
     "express": "~4.13.4",
     "fs-extra": "^1.0.0",
     "log4js": "^1.0.1",
-    "mongoose": "^4.6.8",
+    "mongodb-bluebird": "^0.1.1",
     "morgan": "~1.7.0",
     "request": "^2.76.0",
     "request-promise": "^4.1.1",
