@@ -6,16 +6,16 @@ var protocol     = 'https://'; //http:// or https:// 请求后端服务的协议
 
 var settings = {
     base: {
-        appName: "cnode-api",
+        appName: "cNode-api",
         version: "0.0.1",
         env: env,
         cookie: {
-            secret: "mewtwo",
-            id: 'cnode-api'
+            secret: "weXin",
+            id: 'api'
         },
         session: {
-            secret: "mewtwo",
-            id: 'cnode-api'
+            secret: "weXin",
+            id: 'api'
         },
         desc:'基本配置'
     },

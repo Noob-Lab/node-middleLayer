@@ -12,9 +12,9 @@
     "debug": "~2.2.0",
     "ejs": "~2.4.1",
     "express": "~4.13.4",
+    "express-session": "^1.14.2",
     "fs-extra": "^1.0.0",
     "log4js": "^1.0.1",
-    "mongodb-bluebird": "^0.1.1",
     "morgan": "~1.7.0",
     "request": "^2.76.0",
     "request-promise": "^4.1.1",
@@ -24,5 +24,20 @@
     "istanbul": "^0.4.5",
     "mocha": "^3.1.2",
     "supertest": "^2.0.1"
+  },
+  "apidoc":{
+    "name": "cnode-api",
+    "version": "1.0.0",
+    "description": "基于nodejs的中间层",
+    "title": "cnode-api 基于nodejs的中间层",
+    "url" : "http://127.0.0.1:3000",
+    "order": [
+      "GetUser",
+      "PostUser"
+    ],
+    "template": {
+      "withCompare": true,
+      "withGenerator": true
+    }
   }
 }
