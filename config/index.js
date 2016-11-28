@@ -54,8 +54,8 @@ var settings = {
             port: 80
         },
         mongodb: {
-            host: "",
-            port: "",
+            host: "127.0.0.1",
+            port: "2017",
             dbname: "xcx",
             username: "uname",
             password: "pwd"

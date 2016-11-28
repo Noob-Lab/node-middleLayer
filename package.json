@@ -17,6 +17,7 @@
     "express-session": "^1.14.2",
     "fs-extra": "^1.0.0",
     "log4js": "^1.0.1",
+    "mongoose": "^4.7.0",
     "morgan": "~1.7.0",
     "request": "^2.76.0",
     "request-promise": "^4.1.1",
