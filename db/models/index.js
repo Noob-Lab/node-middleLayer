@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var config   = require('../../config');
-var log4js = require('../../plugins/log4js-log').uselog('db');
+var log4js = require('../../plugins/log4js-log').logger('db');
 
 //https://cnodejs.org/topic/579c96bcda05b9e92af32583
 //解决下面的错误信息
