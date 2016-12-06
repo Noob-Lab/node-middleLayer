@@ -17,6 +17,10 @@ var settings = {
             secret: "weXin",
             id: 'api'
         },
+        wxxcx:{
+            appid:'wx3d585b99f4611a81',
+            appsecret:'a2b82d1fdc72200d5ace3829cd196844'
+        },
         desc:'基本配置'
     },
     dev: {
